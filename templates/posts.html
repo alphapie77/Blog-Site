@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Card Layout</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 700px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .card-content h6 {
+            margin-bottom: 6px;
+            margin-top: 4px;
+            color: #777;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .card-content p {
+            color: #555;
+            margin: 5px 0 10px;
+        }
+
+        .card-footer {
+            display: flex;
+            gap: 15px;
+            font-size: 14px;
+            color: #555;
+            align-items: center;
+        }
+
+        .card-footer i {
+            margin-right: 5px;
+        }
+
+        .card-footer {
+        display: flex;
+        gap: 15px;
+        font-size: 12px;  /* Reduced text size */
+        color: #555;
+        align-items: center;
+        }
+
+
+        /* Icon colors */
+        .date-icon { color: gray; } /* Tomato */
+        .comment-icon { color: gray; } /* Dodger Blue */
+        .like-icon { color: gray; } /* Lime Green */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <h6>In <b>Stackademic</b> by <b>Crafting-Code</b></h6>
+                <h3>I Stopped Using Kubernetes. Our DevOps Team Is Happier Than Ever</h3>
+                <p>Why Letting Go of Kubernetes Worked for Us</p>
+
+                <div class="card-footer">
+                    <span><i class="fa-solid fa-calendar date-icon"></i> Feb 12, 2025</span>
+                    <span><i class="fa-solid fa-comment comment-icon"></i> 45 Comments</span>
+                    <span><i class="fa-solid fa-heart like-icon"></i> 120 Likes</span>
+                </div>
+            </div>
+            <img src="/pictures/card1_image.png" alt="Kubernetes">
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h6><b>PURRFECT SOFTWARE LIMITED</b></h6>
+                <h3>10 Python Libraries That Will Increase Your Development Speed</h3>
+                <p>Code Smarter Not Harder—Python Libraries That Save Developers Hundreds of Hours</p>
+                
+                <div class="card-footer">
+                    <span><i class="fa-solid fa-calendar date-icon"></i> Feb 10, 2025</span>
+                    <span><i class="fa-solid fa-comment comment-icon"></i> 30 Comments</span>
+                    <span><i class="fa-solid fa-heart like-icon"></i> 95 Likes</span>
+                </div>
+            </div>
+            <img src="/pictures/card2_image.jpeg" alt="10 Python Libraries">
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h6><b>Figs in Winter</b></h6>
+                <h3>Practice like a Stoic: 2, Focus on what is completely in your control</h3>
+                <p>More on mastering Epictetus's fundamental rule of life</p>
+
+                <div class="card-footer">
+                    <span><i class="fa-solid fa-calendar date-icon"></i> Feb 8, 2025</span>
+                    <span><i class="fa-solid fa-comment comment-icon"></i> 20 Comments</span>
+                    <span><i class="fa-solid fa-heart like-icon"></i> 78 Likes</span>
+                </div>
+            </div>
+            <img src="/pictures/card3_image.jpeg" alt="Stoic">
+        </div>
+    </div>
+
+</body>
+</html>
